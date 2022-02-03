@@ -1,20 +1,50 @@
-.form{
-   background-color: rgb(136, 133, 136);
-   width:500px;
-   padding: 50px;
-    margin-left: 30%;
-    margin-top: 10%;
+*{
+    background-color: yellow;
 }
 
-.form-control{
+.signup{
+    background-color: white;
+}
+
+/* .container{
+    width: 700px;
+    background-color: white;
+} */
+
+
+
+
+.container{
+   background-color: rgb(255, 255, 255);
+   width:800px;
+   height: 350px;
+   padding: 50px;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.fm{
+    background-color: white;
+}
+
+ .form-control{
     margin-bottom: 20px;
     width: 400px;
     height: 40px;
+    background-color: white;
+    border-radius: 10px;
+
+    
 }
 
 .btn{
-    background-color: greenyellow;
-    width: 100px;
+    cursor: pointer;
+    background-color: yellow;
+    width: 400px;
     height: 40px;
+    border-radius: 20px;
+    border-width: 0ch;
+    font-size: 20px;
    
 }

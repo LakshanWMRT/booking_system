@@ -69,8 +69,9 @@ class App extends Component {
     return (
       <div>
           <div className="container">
+            <h2 className="signup">SIGN UP</h2>
             <div className="form">
-              <form onSubmit={this.onSubmit}>
+              <form onSubmit={this.onSubmit} className="fm">
                 <input type='text' 
                   placeholder="Full Name" 
                   onChange={this.changeFullName}
@@ -100,7 +101,7 @@ class App extends Component {
                 />
                 
                 <br/>
-                <input type='submit' className="btn" value='submit'/>
+                <input type='submit' className="btn" value='SIGN UP'/>
               </form>
             </div>
           </div>
