@@ -1,0 +1,20 @@
+.form{
+   background-color: rgb(136, 133, 136);
+   width:500px;
+   padding: 50px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.form-control{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 40px;
+}
+
+.btn{
+    background-color: greenyellow;
+    width: 100px;
+    height: 40px;
+   
+}
