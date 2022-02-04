@@ -9,15 +9,15 @@ const signUpTemplate = new mongoose.Schema({
         type:String,
         required:true
     },
-    Type:{
-        type:String,
-        required:true
-    },
     VehicleNumber:{
         type:String,
         required:true
     },
-    VehicleSeats:{
+    Type:{
+        type:String,
+        required:true
+    },
+    Seats:{
         type:String,
         required:true
     },

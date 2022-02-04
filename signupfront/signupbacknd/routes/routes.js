@@ -7,9 +7,9 @@ router.post('/signup',(request,response) => {
     const signedUpUser = new signUpTemplateCopy({
         VehicleOwner:request.body.VehicleOwner,
         VehicleModel:request.body.VehicleModel,
-        Type:request.body.Type,
         VehicleNumber:request.body.VehicleNumber,
-        VehicleSeats:request.body.VehicleSeats,
+        Type:request.body.Type,
+        Seats:request.body.Seats,
         email:request.body.email,
         password:request.body.password,
         Date:request.body.Date
