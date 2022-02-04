@@ -1,8 +1,14 @@
 
 *{
-    background-color: yellow;
+    background-color: rgb(200, 255, 0);
 }
 
+.right .img{
+   
+    background-size: cover;
+    height: 600px;
+   
+}
 .signup{
     background-color: white;
 }
@@ -10,26 +16,48 @@
 .type{
     background-color: white;
     margin-bottom: 20px;
-    width: 400px;
-    height: 40px;
+    width: 180px;
+    height: 35px;
     border-radius: 10px;
     margin-right: 40px;
 }
 
+#noSeats{
+    width: 180px;
+    height: 35px;
+}
 
 .container{
    background-color:rgb(255, 255, 255);
-   width:1000px;
+   width: 1000px;
    height: 600px;
-   padding: 50px;
+   padding: 0px;
     margin-left: 10%;
-    margin-top: 30px;
-    border-radius: 0px 20px 0px 20px;
+    margin-top: 50px;
+    border-radius: 50px;
 }
 
+ img{
+     float: right;
+     width: 500px;
+     height: 600px;
+     margin: 0;
+     padding: 0;
+     opacity: 80%;
+     border-radius: 0 50px 0 0;
+     
+ }
 
 .signup{
     background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.left{
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 50px 0 50px;
+   
 }
 
 .fm{
@@ -42,11 +70,13 @@
     margin-bottom: 20px;
     margin-right: 30px;
     width: 400px;
-    height: 40px;
+    height: 35px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+}
 
-    
+.form-control:hover{
+    border-color: red;
 }
 
 .btn{
@@ -58,4 +88,8 @@
     border-width: 0ch;
     font-size: 20px;
    
+}
+
+.btn:hover{
+    background-color: rgb(196, 243, 28);
 }

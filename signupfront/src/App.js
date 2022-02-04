@@ -100,8 +100,10 @@ class App extends Component {
       <div>
         
           <div className="container">
-          <h2 className="signup">SIGN UP</h2>
-            <div>
+            <div className="right"> <img src='1.jpg'></img></div>
+          
+            <div className="left">
+              <h2 className="signup">SIGN UP</h2>
               <form className="fm" onSubmit={this.onSubmit}>
                 <input type='text' 
                   placeholder="Vehicle Owner" 
@@ -134,13 +136,12 @@ class App extends Component {
                 <option value="bus">Bus</option>
                 </select>
 
-                <br/>
-
                 <input type='text' 
                   placeholder="Number of Seats" 
                   onChange={this.changeSeats}
                   value={this.state.VehicleSeats}
                   className="form-control"
+                  id="noSeats"
                   required
                 />
                 <br/>
@@ -162,8 +163,14 @@ class App extends Component {
                 />
                 
                 <br/>
-                <input type='submit' className="btn" value='submit'/>
+                <input type='submit' className="btn" value='SIGN UP ME'/>
               </form>
+            </div>
+          
+          
+         
+            <div>
+              
             </div>
           </div>
       </div>
