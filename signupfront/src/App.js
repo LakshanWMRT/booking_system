@@ -98,6 +98,7 @@ class App extends Component {
   render() { 
     return (
       <div>
+        
           <div className="container">
           <h2 className="signup">SIGN UP</h2>
             <div>
@@ -107,6 +108,7 @@ class App extends Component {
                   onChange={this.changeVehicleOwner}
                   value={this.state.VehicleOwner}
                   className="form-control"
+                  required
                 />
                 <br/>
                 <input type='text' 
@@ -114,6 +116,7 @@ class App extends Component {
                   onChange={this.changeVehicleModel}
                   value={this.state.VehicleModel}
                   className="form-control"
+                  required
                 />
                 <br/>
                 <input type='text' 
@@ -121,10 +124,11 @@ class App extends Component {
                   onChange={this.changeVehicleNumber}
                   value={this.state.VehicleNumber}
                   className="form-control"
+                  required
                 />
                 <br/>
 
-                <select className="type"  placeholder="Vehicle Type"  onChange={this.changeType}  value={this.state.Type}>
+                <select className="type"  placeholder="Vehicle Type"  onChange={this.changeType}  value={this.state.Type} required>
                 <option value="Car">Car</option>
                 <option value="van">Van</option>
                 <option value="bus">Bus</option>
@@ -137,14 +141,16 @@ class App extends Component {
                   onChange={this.changeSeats}
                   value={this.state.VehicleSeats}
                   className="form-control"
+                  required
                 />
                 <br/>
 
-                <input type='text' 
+                <input type='email' 
                   placeholder="E-mail" 
                   onChange={this.changeEmail}
                   value={this.state.email}
                   className="form-control"
+                  required
                 />
                 <br/>
                 <input type='password' 
@@ -152,6 +158,7 @@ class App extends Component {
                   onChange={this.changePassword}
                   value={this.state.password}
                   className="form-control"
+                  required
                 />
                 
                 <br/>
