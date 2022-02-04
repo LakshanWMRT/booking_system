@@ -5,8 +5,11 @@ const signUpTemplateCopy = require('../models/SignupModules')
 
 router.post('/signup',(request,response) => {
     const signedUpUser = new signUpTemplateCopy({
-        FullName:request.body.FullName,
-        userName:request.body.userName,
+        VehicleOwner:request.body.VehicleOwner,
+        VehicleModel:request.body.VehicleModel,
+        Type:request.body.Type,
+        VehicleNumber:request.body.VehicleNumber,
+        VehicleSeats:request.body.VehicleSeats,
         email:request.body.email,
         password:request.body.password,
         Date:request.body.Date

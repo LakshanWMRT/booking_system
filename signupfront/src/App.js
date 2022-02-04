@@ -6,29 +6,53 @@ class App extends Component {
   constructor(){
     super()
     this.state ={
-      FullName:'',
-      userName:'',
+      VehicleOwner:'',
+      VehicleModel:'',
+      Type:'',
+      VehicleNumber:'',
+      VehicleSeats:'',
       email:'',
       password:''
     }
 
-    this.changeFullName= this.changeFullName.bind(this)
-    this.changeUserName= this.changeUserName.bind(this)
+    this.changeVehicleOwner= this.changeVehicleOwner.bind(this)
+    this.changeVehicleModel= this.changeVehicleModel.bind(this)
+    this.changeType= this.changeType.bind(this)
+    this.changeVehicleNumber= this.changeVehicleNumber.bind(this)
+    this.changeVehicleSeats= this.changeVehicleSeats.bind(this)
     this.changeEmail= this.changeEmail.bind(this)
     this.changePassword= this.changePassword.bind(this)
     this.onSubmit=this.onSubmit.bind(this)
 
   }
 
-  changeFullName(event){
+  changeVehicleOwner(event){
     this.setState({
-      FullName:event.target.value
+      VehicleOwner:event.target.value
     })
   }
 
-  changeUserName(event){
+  changeVehicleModel(event){
     this.setState({
-        userName:event.target.value
+      VehicleModel:event.target.value
+    })
+  }
+
+  changeType(event){
+    this.setState({
+      Type:event.target.value
+    })
+  }
+
+  changeVehicleNumber(event){
+    this.setState({
+      VehicleNumber:event.target.value
+    })
+  }
+
+  changeVehicleSeats(event){
+    this.setState({
+      VehicleSeats:event.target.value
     })
   }
 
@@ -48,8 +72,11 @@ class App extends Component {
     event.preventDefault()
 
     const registered={
-      FullName:this.state.FullName,
-      userName:this.state.userName,
+      VehicleOwner:this.state.VehicleOwner,
+      VehicleModel:this.state.VehicleModel,
+      Type:this.state.Type,
+      VehicleNumber:this.state.VehicleNumber,
+      VehicleSeats:this.state.VehicleSeats,
       email:this.state.email,
       password:this.state.password
     }
@@ -58,8 +85,11 @@ class App extends Component {
         .then(response => console.log(response.data))
 
     this.setState({
-      FullName:'',
-      userName:'',
+      VehicleOwner:'',
+      VehicleModel:'',
+      Type:'',
+      VehicleNumber:'',
+      VehicleSeats:'',
       email:'',
       password:''
     })
@@ -73,19 +103,41 @@ class App extends Component {
             <div className="form">
               <form onSubmit={this.onSubmit} className="fm">
                 <input type='text' 
-                  placeholder="Full Name" 
-                  onChange={this.changeFullName}
-                  value={this.state.fullName}
+                  placeholder="Vehicle Owner" 
+                  onChange={this.changeVehicleOwner}
+                  value={this.state.VehicleOwner}
                   className="form-control"
                 />
-                <br/>
+                
                 <input type='text' 
-                  placeholder="user Name" 
-                  onChange={this.changeUserName}
-                  value={this.state.UserName}
+                  placeholder="Vehicle Model" 
+                  onChange={this.changeVehicleModel}
+                  value={this.state.VehicleModel}
                   className="form-control"
                 />
-                <br/>
+               
+              
+                <select className="type"  placeholder="Vehivle Type"  onChange={this.changeType}  value={this.state.Type}>
+                <option value="Car">Car</option>
+                <option value="van">Van</option>
+                <option value="bus">Bus</option>
+                </select>
+ 
+                <input type='text' 
+                  placeholder="Vehicle Number" 
+                  onChange={this.changeVehicleNumber}
+                  value={this.state.VehicleNumber}
+                  className="form-control"
+                />
+
+                <input type='text' 
+                  placeholder="Number of Seates" 
+                  onChange={this.changeVehicleSeats}
+                  value={this.state.VehicleSeats}
+                  className="form-control"
+                />
+
+
                 <input type='text' 
                   placeholder="E-mail" 
                   onChange={this.changeEmail}

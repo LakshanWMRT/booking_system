@@ -1,11 +1,23 @@
 const mongoose = require('mongoose')
 
 const signUpTemplate = new mongoose.Schema({
-    FullName:{
+    VehicleOwner:{
         type:String,
         required:true
     },
-    userName:{
+    VehicleModel:{
+        type:String,
+        required:true
+    },
+    Type:{
+        type:String,
+        required:true
+    },
+    VehicleNumber:{
+        type:String,
+        required:true
+    },
+    VehicleSeats:{
         type:String,
         required:true
     },
