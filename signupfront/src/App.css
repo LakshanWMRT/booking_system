@@ -1,6 +1,6 @@
 
 *{
-    background-color: rgb(255, 255, 255);
+    background-color: yellow;
 }
 
 .signup{
@@ -18,13 +18,21 @@
 
 
 .container{
-   background-color: rgb(255, 255, 255);
+   background-color:rgb(255, 255, 255);
    width:1000px;
-   height: 350px;
+   height: 600px;
    padding: 50px;
     margin-left: 10%;
-    /* margin-top: 10%; */
+    margin-top: 30px;
     border-radius: 0px 20px 0px 20px;
+}
+
+.signup{
+    background-color: rgb(255, 255, 255);
+}
+
+.fm{
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -34,7 +42,7 @@
     margin-right: 30px;
     width: 400px;
     height: 40px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 
     

@@ -100,8 +100,8 @@ class App extends Component {
       <div>
           <div className="container">
           <h2 className="signup">SIGN UP</h2>
-            <div className="form1">
-              <form onSubmit={this.onSubmit}>
+            <div>
+              <form className="fm" onSubmit={this.onSubmit}>
                 <input type='text' 
                   placeholder="Vehicle Owner" 
                   onChange={this.changeVehicleOwner}
